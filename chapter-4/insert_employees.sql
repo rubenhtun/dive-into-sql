@@ -1,3 +1,4 @@
+-- Create the employees table
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(100),
@@ -10,6 +11,7 @@ CREATE TABLE employees (
     age INT
 );
 
+-- Insert sample employee records into the employees table
 INSERT INTO employees (
     employee_id, name, position, salary, gender, email, contract_end_date, department, age
 ) VALUES
