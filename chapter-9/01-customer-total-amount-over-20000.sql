@@ -6,4 +6,4 @@ FROM (
         JOIN orders o ON c.customer_id = o.customer_id
         GROUP BY c.customer_name
     ) AS sub
-WHERE total_amount > 20000;
+WHERE total_amount > 200000;
