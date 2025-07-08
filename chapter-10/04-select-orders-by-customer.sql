@@ -11,3 +11,4 @@ JOIN
   customers c ON o.customer_id = c.customer_id
 WHERE 
   o.customer_id = 1;
+  
