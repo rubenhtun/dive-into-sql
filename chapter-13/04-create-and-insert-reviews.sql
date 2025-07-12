@@ -3,7 +3,7 @@ CREATE TABLE reviews (
     review_id INT PRIMARY KEY,
     product_id INT,
     customer_id INT,
-    rating INT,
+    rating INT CHECK (rating BETWEEN 1 AND 5),
     comment TEXT,
     review_date DATE,
     FOREIGN KEY (product_id) REFERENCES products(product_id),
